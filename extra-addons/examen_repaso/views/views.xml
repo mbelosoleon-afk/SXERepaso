@@ -1,0 +1,83 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="examen_repaso.form">
+      <field name="name">examen_repaso.examen_repaso form</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//notebook" position="inside">
+          <page string="PROYECTO">
+            <group>
+              <field name="nombre" string="Nombre"/>
+              <field name="apellidos" string="Apellidos"/>
+              <field name="proyecto" string="Descripción del Proyecto"/>
+              <field name="tutor" string="Tutor Asignado"/>
+              <field name="horasDia" string="Horas al día"/>
+              <field name="horasMes" string="Horas al mes"/>
+            </group>
+          </page>
+        </xpath>
+      </field>
+    </record>
+
+
+
+<!--
+    <record model="ir.ui.view" id="examen_repaso.list">
+      <field name="name">ExamenRepaso list</field>
+      <field name="model">examen_repaso.examen_repaso</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="examen_repaso.action_window">
+      <field name="name">ExamenRepaso window</field>
+      <field name="res_model">examen_repaso.examen_repaso</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="examen_repaso.action_server">
+      <field name="name">ExamenRepaso server</field>
+      <field name="model_id" ref="model_examen_repaso_examen_repaso"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="ExamenRepaso" id="examen_repaso.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="examen_repaso.menu_1" parent="examen_repaso.menu_root"/>
+    <menuitem name="Menu 2" id="examen_repaso.menu_2" parent="examen_repaso.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="examen_repaso.menu_1_list" parent="examen_repaso.menu_1"
+              action="examen_repaso.action_window"/>
+    <menuitem name="Server to list" id="examen_repaso" parent="examen_repaso.menu_2"
+              action="examen_repaso.action_server"/>
+-->
+  </data>
+</odoo>
