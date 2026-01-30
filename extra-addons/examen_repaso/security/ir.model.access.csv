@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_examen_repaso_examen_repaso,examen_repaso.examen_repaso,model_examen_repaso_examen_repaso,base.group_user,1,1,1,1
+access_examen_repaso_proyecto,examen_repaso.examen_repaso,model_examen_repaso_proyecto,base.group_user,1,1,1,1

@@ -1,0 +1,25 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record id="view_examen_repaso_form" model="ir.ui.view">
+        <field name="name">examen_repaso.proyecto.form</field>
+        <field name="model">examen_repaso.proyecto</field>
+        <field name="arch" type="xml">
+            <form string="Proyecto">
+                <sheet>
+                    <group>
+                        <field name="nombre" string="Nombre"/>
+                        <field name="apellidos" string="Apellidos"/>
+                        <field name="proyecto" string="Descripción del proyecto"/>
+                        <field name="tutor" string="Tutor asignado"/>
+                        <field name="horasDia" string="Horas al día"/>
+                        <field name="horasMes" string="Horas al mes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+  </data>
+</odoo>

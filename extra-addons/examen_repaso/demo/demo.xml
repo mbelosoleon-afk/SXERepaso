@@ -1,30 +1,37 @@
 <odoo>
     <data>
-<!--
-          <record id="object0" model="examen_repaso.examen_repaso">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
+
+          <record id="estudiante1" model="examen_repaso.proyecto">
+            <field name="nombre">Miguel</field>
+            <field name="apellidos">Mancuerna Fija</field>
+            <field name="proyecto">Proyecto apasionante sobre ciclos sanos</field>
+            <field name="tutor">diego</field>
+            <field name="horasDia">6</field>
           </record>
 
-          <record id="object1" model="examen_repaso.examen_repaso">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
+          <record id="estudiante2" model="examen_repaso.proyecto">
+            <field name="nombre">Fulgencio</field>
+            <field name="apellidos">Pérez Gómez</field>
+            <field name="proyecto">Una aproximación a la realidad de Skynet</field>
+            <field name="tutor">damian</field>
+            <field name="horasDia">5</field>
           </record>
 
-          <record id="object2" model="examen_repaso.examen_repaso">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
+        <record id="estudiante3" model="examen_repaso.proyecto">
+            <field name="nombre">Herminia</field>
+            <field name="apellidos">García Martínez</field>
+            <field name="proyecto">Estudio longitudinal sobre las consecuencias de abusar de ChatGPT</field>
+            <field name="tutor">manuelA</field>
+            <field name="horasDia">7</field>
           </record>
 
-          <record id="object3" model="examen_repaso.examen_repaso">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
+        <record id="estudiante4" model="examen_repaso.proyecto">
+            <field name="nombre">Lucrecia</field>
+            <field name="apellidos">Sánchez Fernández</field>
+            <field name="proyecto">Proyecto sobre proyectos dentro de proyectos</field>
+            <field name="tutor">sin</field>
+            <field name="horasDia">4</field>
           </record>
 
-          <record id="object4" model="examen_repaso.examen_repaso">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
     </data>
 </odoo>

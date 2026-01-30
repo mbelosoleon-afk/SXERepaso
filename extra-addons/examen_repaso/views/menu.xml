@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <menuitem id="examen_repaso_menu_root" name="Proyectos" sequence="10"/>
+
+        <menuitem id="examen_repaso_categoria" name="Configuración" parent="examen_repaso_menu_root"/>
+
+        <record id="action_examen_repaso_proyecto" model="ir.actions.act_window">
+            <field name="name">Lista de Proyectos</field>
+            <field name="res_model">examen_repaso.proyecto</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <menuitem id="menu_proyecto_list"
+                  name="Estudiantes"
+                  parent="examen_repaso_menu_root"
+                  action="action_examen_repaso_proyecto"
+                  sequence="10"/>
+    </data>
+</odoo>
