@@ -32,6 +32,7 @@ y sus proyectos de fin de ciclo.
     ],
     # only loaded in demonstration mode
     'demo': [
+        'demo/demo.xml'
     ],
 }
 
